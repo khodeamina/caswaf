@@ -1,0 +1,62 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "4.6.2",
+    "@craco/craco": "6.4.5",
+    "antd": "4.15.5",
+    "casdoor-js-sdk": "^0.2.7",
+    "copy-to-clipboard": "^3.3.3",
+    "craco-less": "2.0.0",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "i18next": "^19.8.9",
+    "moment": "^2.29.1",
+    "react": "17.0.2",
+    "react-device-detect": "1.17.0",
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.8.7",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "8.22.0",
+    "eslint-plugin-react": "^7.31.1"
+  },
+  "scripts": {
+    "start": "set PORT=16001 && craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Use yarn for installing: https://yarnpkg.com/en/docs/install')\"",
+    "fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "lint:css": "stylelint src/**/*.{css,less} --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 9, ie 10, ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 9, ie 10, ie 11"
+    ]
+  }
+}
