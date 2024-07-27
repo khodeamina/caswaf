@@ -24,8 +24,3 @@ logs/
 lastupdate.tmp
 commentsRouter*.go
 
-.vscode/
-casdoor/token_jwt_key.pem
-conf/app.conf
-go1.22.5.linux-amd64.tar.gz
-web/src/Conf.js
